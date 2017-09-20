@@ -14,13 +14,6 @@ function nowServing(katzDeliLine){
     return "There is nobody waiting to be served!";
   }
   return(`Currently serving ${firstCustomer}.`)
-
-  // if(katzDeliLine.length === 0){
-  //   return "There is nobody waiting to be served!";
-  // }else{
-  //   katzDeliLine.shift()
-  // }
-  // return(`Currently serving ${firstCustomer}.`)
 }
 
 //currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
