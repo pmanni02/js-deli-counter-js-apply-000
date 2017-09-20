@@ -8,11 +8,14 @@ function takeANumber(katzDeliLine, newCustomer){
 //nowServing(katzDeliLine); // "Currently serving Ada."
 function nowServing(katzDeliLine){
   var firstCustomer = katzDeliLine[0];
+  //if there are customers remove the first customer
   if(katzDeliLine.length > 0){
     katzDeliLine.shift();
   }else{
+    //the length of the array is zero
     return "There is nobody waiting to be served!";
   }
+  //return the name of the first customer
   return(`Currently serving ${firstCustomer}.`);
 }
 
