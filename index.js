@@ -15,3 +15,8 @@ function nowServing(katzDeliLine){
   }
   return(`Currently serving ${firstCustomer}.`)
 }
+
+//currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
+function currentLine(katzDeliLine){
+  
+}
