@@ -6,5 +6,12 @@ function takeANumber(katzDeliLine, newCustomer){
 
 //nowServing(katzDeliLine); // "Currently serving Ada."
 function nowServing(){
-  
+  var firstCustomer;
+  if(katzDeliLine.length === 0){
+    return "There is nobody waiting to be served!";
+  }else{
+    firstCustomer = katzDeliLine[1]
+    katzDeliLine.shift()
+  }
+  return(`Currently serving ${firstCustomer}.`)
 }
