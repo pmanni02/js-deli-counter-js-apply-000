@@ -18,9 +18,14 @@ function nowServing(katzDeliLine){
 
 //currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 function currentLine(katzDeliLine){
+  var list = '';
   if(katzDeliLine.length === 0){
     return "The line is currently empty."
   }else{
-    
+    for(let i=0; i<katzDeliLine.length; i++){
+      loop += `${i+1}. ${katzDeliLine[i]}${i===katzDeliLine.length-1?'':','}`
+    }
+    return(`The line is currently: ${loop}`);
+    //return(`The line is currently: `)
   }
 }
