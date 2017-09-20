@@ -6,5 +6,5 @@ function takeANumber(katzDeliLine, newCustomer){
 
 //nowServing(katzDeliLine); // "Currently serving Ada."
 function nowServing(){
-
+  
 }
