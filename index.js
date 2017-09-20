@@ -8,12 +8,19 @@ function takeANumber(katzDeliLine, newCustomer){
 //nowServing(katzDeliLine); // "Currently serving Ada."
 function nowServing(katzDeliLine){
   var firstCustomer = katzDeliLine[0]
-  if(katzDeliLine.length === 0){
-    return "There is nobody waiting to be served!";
+  if(katzDeliLine.length > 0){
+    katzDeliLine.shift();
   }else{
-    katzDeliLine.shift()
+    return "There is nobody waiting to be served!";
   }
   return(`Currently serving ${firstCustomer}.`)
+  
+  // if(katzDeliLine.length === 0){
+  //   return "There is nobody waiting to be served!";
+  // }else{
+  //   katzDeliLine.shift()
+  // }
+  // return(`Currently serving ${firstCustomer}.`)
 }
 
 //currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
