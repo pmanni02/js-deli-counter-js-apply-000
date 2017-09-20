@@ -4,7 +4,7 @@ function takeANumber(katzDeliLine, newCustomer){
   return(`Welcome, ${newCustomer}. You are number ${katzDeliLine.length} in line.`)
     // for(let i=0; i<katzDeliLine.length; i++){
     //   if(katzDeliLine[i] === newCustomer){
-    // 
+    //
     //   }
     // }
 }
