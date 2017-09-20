@@ -5,7 +5,6 @@ function takeANumber(katzDeliLine, newCustomer){
   return(`Welcome, ${newCustomer}. You are number ${katzDeliLine.length} in line.`)
 }
 
-//nowServing(katzDeliLine); // "Currently serving Ada."
 function nowServing(katzDeliLine){
   var firstCustomer = katzDeliLine[0];
   //if there are customers remove the first customer
@@ -19,7 +18,6 @@ function nowServing(katzDeliLine){
   return(`Currently serving ${firstCustomer}.`);
 }
 
-//currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 function currentLine(katzDeliLine){
   var list = ''; //List of people currently in line
   if(katzDeliLine.length > 0){ //if there are people in line
