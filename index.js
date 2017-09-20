@@ -7,7 +7,7 @@ function takeANumber(katzDeliLine, newCustomer){
 }
 
 //nowServing(katzDeliLine); // "Currently serving Ada."
-function nowServing(){
+function nowServing(katzDeliLine){
   var firstCustomer;
   if(katzDeliLine.length === 0){
     return "There is nobody waiting to be served!";
