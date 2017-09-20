@@ -1,7 +1,9 @@
 
 //takeANumber(katzDeliLine, "Ada"); //"Welcome, Ada. You are number 1 in line."
 function takeANumber(katzDeliLine, newCustomer){
+  //add the newCustomer to the end of the katzDeliLine
   katzDeliLine.push(newCustomer);
+  //return customer name and number in line
   return(`Welcome, ${newCustomer}. You are number ${katzDeliLine.length} in line.`)
 }
 
