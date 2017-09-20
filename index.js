@@ -18,13 +18,16 @@ function nowServing(katzDeliLine){
 
 //currentLine(katzDeliLine); // "The line is currently: 1. Kent, 2. Matz"
 function currentLine(katzDeliLine){
-  var list = '';
-  if(katzDeliLine.length > 0){
+  var list = ''; //List of people currently in line
+  if(katzDeliLine.length > 0){ //if there are people in line
     for(let i=0; i<katzDeliLine.length; i++){
+      //creation of numbered list of customers
       list += `${i+1}. ${katzDeliLine[i]}${i===katzDeliLine.length-1?'':', '}`
     }
   } else {
+    //the length of the line is 0 = no customers
     return "The line is currently empty."
   }
+  //if there are customers return list of customers
   return(`The line is currently: ${list}`);
 }
